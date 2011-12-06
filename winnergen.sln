@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winnergen", "winnergen\winnergen.vcxproj", "{2C568D02-FE21-4310-893E-B4BC9C394C67}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winnergen2", "winnergen2\winnergen2.vcxproj", "{F8522BE6-A07C-4C0D-B028-66193A4C339A}"
+EndProject
 Global
 	GlobalSection(SubversionScc) = preSolution
 		Svn-Managed = True
@@ -17,6 +19,10 @@ Global
 		{2C568D02-FE21-4310-893E-B4BC9C394C67}.Debug|Win32.Build.0 = Debug|Win32
 		{2C568D02-FE21-4310-893E-B4BC9C394C67}.Release|Win32.ActiveCfg = Release|Win32
 		{2C568D02-FE21-4310-893E-B4BC9C394C67}.Release|Win32.Build.0 = Release|Win32
+		{F8522BE6-A07C-4C0D-B028-66193A4C339A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8522BE6-A07C-4C0D-B028-66193A4C339A}.Debug|Win32.Build.0 = Debug|Win32
+		{F8522BE6-A07C-4C0D-B028-66193A4C339A}.Release|Win32.ActiveCfg = Release|Win32
+		{F8522BE6-A07C-4C0D-B028-66193A4C339A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

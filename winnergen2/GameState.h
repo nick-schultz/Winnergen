@@ -16,6 +16,7 @@ class PlayerPick
 };
 typedef std::vector<PlayerPick> PickList;
 
+
 class Player
 {
 public:
@@ -27,6 +28,7 @@ public:
 };
 typedef std::vector<Player> PlayerList;
 
+
 class Contest{
 	Contest(std::string &teamA, std::string &teamB, GamePick initPick):
 		m_TeamA(teamA),m_TeamB(teamB),m_InitOutcome(initPick){}
@@ -37,9 +39,16 @@ class Contest{
 };
 typedef std::vector<Contest> ContestList;
 
-//Should have only one instance of this class, threads will refer to this.
+//Should have only one instance of this class, threads will refer to this to check winners.
 class GameState
 {
-	PlayerList m_PlayerList;
-	ContestList m_ContestList;
+	//Load GameState from file
+	GameState(std::string filename){};
+
+	const PlayerList m_PlayerList;
+	const ContestList m_ContestList;
+
+private:
+	void LoadFile(std::string filename);
+	void getLinePick(std::ifstream &file, int contest_num);
 };
