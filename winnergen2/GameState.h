@@ -5,6 +5,8 @@
 class Contest;
 typedef enum{TeamA,	TeamB, NOTSET} GamePick;
 
+//PlayerPick
+//
 class PlayerPick
 {
 	PlayerPick(Contest &game, GamePick pick, int rank):
